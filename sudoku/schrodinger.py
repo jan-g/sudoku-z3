@@ -124,17 +124,31 @@ Is Schrödinger’s cat alive or dead?
 10. Exactly one of statements 1 and 2 is false.
 11. Statements 1, 8 and 11 are all false.
 
-1 = -2
-2 = F
-3 = T
-4 = F
-5 = F
-6 = F
-8 = F
-9 = T
-10 = T
-11 = F
-T = (1 | F)
-1 = T
+This gives us:
+
+1 = c
+2 = -c
+3 = 6 ^ 9
+4 = 2 ^ 6
+5 = -4 & -5 & -10
+6 = 1 ^ 10
+7 ... this is irrelevant as long as five of the other statements aren't true
+8 = 3 ^ 10
+9 = 6 ^ 10
+10 = 1 ^ 2
+11 = -1 & -8 & -11
+
+10  = 1 ^ 2     = c ^ -c                    = T
+9   = 6 ^ 10    = 6 ^ T     = -6
+3   = 6 ^ 9     = 6 ^ -6                    = T
+8   = 3 ^ 10    = T ^ T                     = F
+6   = 1 ^ 10    = 1 ^ T     = -1
+5   = -4 & -5 & -10                         = F
+11  = -1 & -8 & -11         =>          11  = F
+11  = F         => -1 & -8 & T= F   => -1 & T = F       => -1 = F   => 1 = T
+2   = -1                                    = F
+6   = -1                                    = F
+9   = -6                                    = T
+4   = 2 ^ 6     = F ^ F                     = F
 
 """
